@@ -136,7 +136,7 @@ jobs:
           sonar-token: ${{ env.SONAR_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          fail-on-error: true
+          fail-on-quality-gate-error: true
     
 
 
