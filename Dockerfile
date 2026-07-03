@@ -43,6 +43,7 @@ docker-build-push:
       - name: Build, tag, and push image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: my-app
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build \
